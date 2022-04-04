@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Directory listing for /Meme Battle/bin/GAME/</title>
+</head>
+<body>
+<h1>Directory listing for /Meme Battle/bin/GAME/</h1>
+<hr>
+<ul>
+<li><a href="Background.class">Background.class</a></li>
+<li><a href="Ball.class">Ball.class</a></li>
+<li><a href="BallListener.class">BallListener.class</a></li>
+<li><a href="Boss.class">Boss.class</a></li>
+<li><a href="Main.class">Main.class</a></li>
+<li><a href="Monster.class">Monster.class</a></li>
+<li><a href="MonsterRun.class">MonsterRun.class</a></li>
+<li><a href="Music.class">Music.class</a></li>
+</ul>
+<hr>
+</body>
+</html>
