@@ -72,7 +72,7 @@
 
 面板类创建界面：
 
-```
+```java
 public class Ball extends JPanel {
 	/**
 	 * 
@@ -108,7 +108,7 @@ public class Ball extends JPanel {
 
 背景类绘制背景；当人物贴近创窗口边缘时，提供背景的滚动：
 
-```
+```java
 public class Background implements ImageObserver {
 	private int x;     //背景起始坐标
 	private int y;
@@ -146,7 +146,7 @@ public class Background implements ImageObserver {
 
 开始游戏前的说明界面：
 
-```
+```java
 Object[] options ={ "开始无聊的时光", "不选择浪费生命" };  //自定义按钮上的文字
 		int m = JOptionPane.showOptionDialog(null, "这里是《表情包大作战》，是一个超级简陋滴游戏\n" + 
 		"A：向左移动     D：向右移动     J：向左攻击     K：向右攻击\n" + "也许W和S也有什么用处？Σ( ° △ °|||)︴\n" + 
@@ -161,7 +161,7 @@ Object[] options ={ "开始无聊的时光", "不选择浪费生命" };  //自�
 
 第一通过/失败的界面：
 
-```
+```java
 if(main.getscore() >= 20 ) {
 			Object[] options ={ "继续无聊的时光", "不选择浪费生命" };  //自定义按钮上的文字
 			m1 = JOptionPane.showOptionDialog(null, "恭喜通过第一关", "QWQ",
@@ -201,7 +201,7 @@ if(list.size() + list1.size() + list2.size() + list3.size() >= 20) {
 
 Boss关通过/失败的界面：
 
-```
+```java
 if(list4.size() == 0) {
 			Object[] options ={ "→小彩蛋←", "不选择浪费生命" };  //自定义按钮上的文字
 			m3 = JOptionPane.showOptionDialog(null, "tql wsl","QWQ",
@@ -234,7 +234,7 @@ if((boss.a == main.getx())&&(boss.b == main.gety())) {
 
 怪物的绘制：
 
-```
+```java
 public class Monster implements ImageObserver {
 	private int x,y,xspeed;     //怪物出现的坐标及移动速度
 	private int monsterwidth = 90 * 2,monsterheigth = 90 * 2;
@@ -316,7 +316,7 @@ public class Monster implements ImageObserver {
 
 怪物参数的赋值；并且将怪物为单元存入数组：
 
-```
+```java
 public void monster(int x) {     //获取MonsterRun传递来的随机速度和水平坐标
 		Monster monster = new Monster(x,500,random.nextInt(20) - 10,g,list);
 		Monster monster1 = new Monster(x,500,random.nextInt(20) - 10,g,list1);
@@ -337,7 +337,7 @@ public void monster(int x) {     //获取MonsterRun传递来的随机速度和�
 
 人物的绘制及动作实现：
 
-```
+```java
 public class Main implements ImageObserver {
 	private int picture = 0;
 	private int x;
@@ -513,7 +513,7 @@ public class Main implements ImageObserver {
 
 操作按键设置：
 
-```
+```java
 @Override
 	public void keyTyped(KeyEvent e) {
 	}
@@ -673,7 +673,7 @@ public class Main implements ImageObserver {
 
 击败怪物的判定：
 
-```
+```java
 public void mainmove() {
 		x += xspeed;
 		if(x - 25 <= 0 || x >= 400) {
@@ -760,7 +760,7 @@ public void mainmove() {
 
 怪物与人物的距离判定：
 
-```
+```java
 public class MonsterRun implements Runnable {     //创建线程
 	int x;
 	int X,Y;
@@ -796,7 +796,7 @@ public class MonsterRun implements Runnable {     //创建线程
 
 Boss的技能和击败机制：
 
-```
+```java
 public void setAttacknum(int attacknum) {
 		this.attacknum = attacknum;
 	}
@@ -840,7 +840,7 @@ public void setAttacknum(int attacknum) {
 
 背景音乐：
 
-```
+```java
 public class Music {
 	public void play(){
 		String FilePath="G:\\Java World!\\Meme Battle\\source material\\Music";
